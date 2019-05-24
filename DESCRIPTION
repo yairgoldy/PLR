@@ -1,0 +1,14 @@
+Package: PLR
+Type: Package
+Title: Proportional Likelihood Ratio Model
+Version: 0.1.0
+Authoers@R: (person("Yair", "Goldberg", email = "yair.goldy@gmail.com", role = c("aut", "cre")
+Author: Yair Goldberg [aut, cre] Malka Gorfine [aut, cre]
+Maintainer: Yair Goldberg <yair.goldy@gmail.com>
+Description: This package implements estimation of the parameters of the proportional likelihood model with Lou & Tsai (2012), Chan (2013), and Goldberg & Gorfine (2019) methods. It can handle missing data and biased sampling.
+Depends: R (>= 3.3.0)
+License: Artistic-2.0
+LazyData: true
+Encoding: UTF-8
+Imports: tibble, stats, tidyr, dplyr
+RoxygenNote: 6.1.1
