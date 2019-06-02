@@ -4,7 +4,7 @@
 
 [Yair Goldberg](https://yairgo.net.technion.ac.il/) and [Malka Gorfine](https://yairgo.net.technion.ac.il/)
 
-[R/PLR](https://github.com/yairgoldy/PLR) is an [R](https:/www.r-project.org) package. This package implements estimation of the parameters of the proportional likelihood model with Lou & Tsai (2012), Chan (2013), and Goldberg & Gorfine (2019) methods. It can handle missing data and biased sampling. The package also contains a function that creates the different datasets used in the simulation of oldberg & Gorfine (2019).
+[R/PLR](https://github.com/yairgoldy/PLR) is an [R](https:/www.r-project.org) package. This package implements estimation of the parameters of the proportional likelihood model with Lou & Tsai (2012), Chan (2013), and Goldberg & Gorfine (2019) methods. It can handle missing data and biased sampling. The package also contains a function that creates the different datasets used in the simulation of Goldberg & Gorfine (2019).
 
 
 #### Installation
@@ -15,7 +15,7 @@ You can install it from its [GitHub repository](https://github.com/yairgoldy/PLR
 install.packages("devtools")
 ```
 
-Then install R/corihw using the `install_github` function in the
+Then install R/PLR using the `install_github` function in the
 [devtools](https://github.com/hadley/devtools) package.
 
 ```r

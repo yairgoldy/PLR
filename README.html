@@ -190,12 +190,12 @@ $(document).ready(function () {
 <div id="rplr-estimation-in-the-proportional-likelihood-model-with-missing-data-and-biased-sampling." class="section level3">
 <h3>R/PLR: Estimation in the Proportional Likelihood Model with Missing Data and Biased Sampling.</h3>
 <p><a href="https://yairgo.net.technion.ac.il/">Yair Goldberg</a> and <a href="https://yairgo.net.technion.ac.il/">Malka Gorfine</a></p>
-<p><a href="https://github.com/yairgoldy/PLR">R/PLR</a> is an <a href="https:/www.r-project.org">R</a> package. This package implements estimation of the parameters of the proportional likelihood model with Lou &amp; Tsai (2012), Chan (2013), and Goldberg &amp; Gorfine (2019) methods. It can handle missing data and biased sampling. The package also contains a function that creates the different datasets used in the simulation of oldberg &amp; Gorfine (2019).</p>
+<p><a href="https://github.com/yairgoldy/PLR">R/PLR</a> is an <a href="https:/www.r-project.org">R</a> package. This package implements estimation of the parameters of the proportional likelihood model with Lou &amp; Tsai (2012), Chan (2013), and Goldberg &amp; Gorfine (2019) methods. It can handle missing data and biased sampling. The package also contains a function that creates the different datasets used in the simulation of Goldberg &amp; Gorfine (2019).</p>
 <div id="installation" class="section level4">
 <h4>Installation</h4>
 <p>You can install it from its <a href="https://github.com/yairgoldy/PLR">GitHub repository</a>. You first need to install the <a href="https://github.com/hadley/devtools">devtools</a> package.</p>
 <pre class="r"><code>install.packages(&quot;devtools&quot;)</code></pre>
-<p>Then install R/corihw using the <code>install_github</code> function in the <a href="https://github.com/hadley/devtools">devtools</a> package.</p>
+<p>Then install R/PLR using the <code>install_github</code> function in the <a href="https://github.com/hadley/devtools">devtools</a> package.</p>
 <pre class="r"><code>library(devtools)
 install_github(&quot;yairgoldy/PLR&quot;)</code></pre>
 </div>
@@ -207,12 +207,16 @@ g(y) = \{\Phi(0.5)\}^{-1} (0.5 \pi)^{-1/2} \exp\{-2(y-0.25)^2\} \;\;\;\;\;\; y \
 <p>The following code creates 50 dataset, each of sample-size 200 and compare the performence of the three methods.</p>
 <pre class="r"><code>library(PLR)
 library(tidyverse)</code></pre>
-<pre><code>## -- Attaching packages --------------------------------------------------------- tidyverse 1.2.1 --</code></pre>
-<pre><code>## &lt;U+221A&gt; ggplot2 3.1.0     &lt;U+221A&gt; purrr   0.2.5
-## &lt;U+221A&gt; tibble  1.4.2     &lt;U+221A&gt; dplyr   0.7.8
-## &lt;U+221A&gt; tidyr   0.8.2     &lt;U+221A&gt; stringr 1.3.1
-## &lt;U+221A&gt; readr   1.3.0     &lt;U+221A&gt; forcats 0.3.0</code></pre>
-<pre><code>## -- Conflicts ------------------------------------------------------------ tidyverse_conflicts() --
+<pre><code>## -- Attaching packages ---------------------------------------------------------------------------- tidyverse 1.2.1 --</code></pre>
+<pre><code>## &lt;U+221A&gt; ggplot2 3.1.0     &lt;U+221A&gt; purrr   0.3.2
+## &lt;U+221A&gt; tibble  2.1.1     &lt;U+221A&gt; dplyr   0.8.1
+## &lt;U+221A&gt; tidyr   0.8.3     &lt;U+221A&gt; stringr 1.4.0
+## &lt;U+221A&gt; readr   1.3.1     &lt;U+221A&gt; forcats 0.4.0</code></pre>
+<pre><code>## Warning: package 'tibble' was built under R version 3.5.3</code></pre>
+<pre><code>## Warning: package 'tidyr' was built under R version 3.5.3</code></pre>
+<pre><code>## Warning: package 'purrr' was built under R version 3.5.3</code></pre>
+<pre><code>## Warning: package 'dplyr' was built under R version 3.5.3</code></pre>
+<pre><code>## -- Conflicts ------------------------------------------------------------------------------- tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
 <pre class="r"><code>n &lt;- 200
